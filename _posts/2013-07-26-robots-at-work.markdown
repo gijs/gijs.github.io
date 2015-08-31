@@ -9,9 +9,12 @@ comments: true
 
 [![Image](/images/robots-at-work.jpg "The Window: Robots at Work") ](http://video.wired.com/watch/the-window-robots-at-work)
 
-{% blockquote %}
+
+{% raw %}
+<blockquote>
 The Window takes you on a tour of the world's most extraordinary construction projects, factories, labs, and landmarks—seen through the eyes of the people who work there.
-{% endblockquote %}
+</blockquote>
+{% endraw %}
 
 See this [second video](http://video.wired.com/watch/the-window-robot-economy?c=series) about [Kiva Systems](http://www.kivasystems.com/) warehouse robots.
 

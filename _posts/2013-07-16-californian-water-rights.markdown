@@ -5,9 +5,11 @@ date: 2013-07-16 17:58
 comments: true
 #categories: gis geo dataviz
 ---
-{% blockquote %}
+{% raw %}
+<blockquote>
 <a href="http://projects-ca.statewater.org/water-rights">California Water Rights</a> is an interactive map of water rights held in California.
-{% endblockquote %}
+</blockquote>
+{% endraw %}
 
 The design of the project is very 'physical atlas'-like, using old style graphics and the elegant Rosario typeface.
 

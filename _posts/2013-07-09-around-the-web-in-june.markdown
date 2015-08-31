@@ -119,9 +119,11 @@ comments: true
 
  * [Terraformer](https://github.com/Esri/Terraformer) by ESRI. Who said they don't do Open Source? 
 
-{% blockquote %} 
+{% raw %}
+<blockquote>
 Speaking of Open Source... I read this true quote on Twitter: "Closed-source is alchemy, Open source is chemistry".
-{% endblockquote %} 
+</blockquote>
+{% endraw %}
  
  
 
