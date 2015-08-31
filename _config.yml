@@ -15,6 +15,3 @@ markdown: kramdown
 
 
 permalink:     date
-gems:
-- blockquote
-- titlecase

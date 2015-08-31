@@ -6,9 +6,11 @@ comments: true
 #categories: development
 ---
 
-{% blockquote [Alex MacCaw] %}
+{% raw %}
+<blockquote>
 "Historically, <s>Rails</s>Django applications have been an amalgamation of <s>Ruby</s>Python, HTML and snippets of Javascript. Add an API to the mix, include a ton of conditional rendering logic, and you’ve got your classic <s>Rails</s>Django spaghetti"
-{% endblockquote %}
+</blockquote>
+{% endraw %}
 
 
 
