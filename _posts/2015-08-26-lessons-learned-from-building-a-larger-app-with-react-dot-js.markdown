@@ -90,9 +90,9 @@ Take Webpack's advice
 
 Don't blindly copy require() statements from file to file like I did, as this will grow your bundle size and will take a lot of time cleaning up.
 
-Running `$ webpack -cp` will probably give lots of warnings which you can usually ignore. But to get the best filesizes resulting mobile performance, it's good practice to at least clean up your own code.
+Running `$ webpack -cp` will probably give lots of warnings which you can usually ignore. But to get the best filesizes resulting in the best possible mobile performance, it's good practice to at least clean up your own code.
 
-Webpack will neatly tell you which variables are not used and which require() statements are not needed.
+Webpack will tell you which variables are not used and which require() statements are not needed.
 
 Also, use [Webpack's xhr bundle loading feature](http://webpack.github.io/docs/code-splitting.html) in conjunction with [react-router](https://github.com/rackt/react-router), or go isomorphic for larger multipage apps. This will make the app load faster and also cuts down on Webpack's hot-reloading time during development.
 
