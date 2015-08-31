@@ -1,0 +1,17 @@
+# Site settings
+title: NYHOLT
+email: gijs.nijholt@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  I'm a developer at Nelen & Schuurmans (Geo, Datavis, Python, JS, iOS), 
+  Nurse (HBO-V), CrossFit & Survivalruns, Boardsports & Bikesports, 
+  Arduino enthousiast
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://gijs.github.io" # the base hostname & protocol for your site
+twitter_username: nyholt
+github_username:  gijs
+
+# Build settings
+markdown: kramdown
+
+
+permalink:     date

@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Recently"
+date: 2014-12-12 15:36
+comments: true
+#categories: linkdump
+---
+
+ * [icdiff](http://www.jefftk.com/icdiff) is a side-by-side diff viewer for your terminal.
+
+ * [pup](https://github.com/EricChiang/pup) is a commandline HTML parser. 
+
+ * [mapbox/geojson-vt](https://github.com/mapbox/geojson-vt) slices GeoJSON into vector tiles on the fly in the browser.
+
+ * [Skeleton](http://getskeleton.com) is a CSS framework for small projects. It's only 400 lines of CSS. Check out [the demo](http://getskeleton.com/examples/landing/).
+
+ * [Design Explosions: Mapping on iOS](https://medium.com/design-explosion/design-explosions-mapping-on-ios-ad4ec6ba5c59) is a good read on the UX design process of mobile mapping apps. Read the [introduction post](https://medium.com/design-explosion/introducing-design-explosions-e564dea4d435) first. By [UX Launchpad](http://uxlaunchpad.com).
+
+ * [Deepdive](http://deepdive.stanford.edu) uses machine learning techniques to leverage on domain-specific knowledge and incorporates user feedback to improve the quality of its analysis. In other words, it's a deep learning system which can apparently learn from unstructured and noisy data.
+
+ * [MonetDB](https://www.monetdb.org) is an open source column-oriented database management system developed at the Centrum Wiskunde & Informatica (CWI) in the Netherlands. It was designed to provide high performance on complex queries against large databases, such as combining tables with hundreds of columns and multi-million rows. MonetDB has been applied in high-performance applications for online analytical processing (OLAP), data mining, [GIS](https://www.monetdb.org/Documentation/Extensions/GIS), RDF, streaming data processing, text retrieval and sequence alignment processing.
+
+ * [The Offline Cookbook](http://jakearchibald.com/2014/offline-cookbook/) is about [ServiceWorkers](http://www.html5rocks.com/en/tutorials/service-worker/introduction/)
+
+ * [Bondic](http://notaglue.com) is not glue, it's a liquid plastic welder. The same stuff they use on dental braces.
+
