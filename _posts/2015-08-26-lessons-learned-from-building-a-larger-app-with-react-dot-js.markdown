@@ -6,6 +6,8 @@ comments: true
 #categories: javascript react development
 ---
 
+*Note: My colleague Reinout van Rees [posted the back-end side of this story](http://reinout.vanrees.org/weblog/2015/08/31/django-site-with-javascript-frontend.html) including thoughts on front-end/back-end responsibilities*
+
 I was asked to join the EFCIS project team as a frontend developer. EFCIS aims to be the go-to catalog of ecological, physiological and chemical information in the Netherlands.
 
 ![Image](/images/efcis.jpg "EFCIS")
@@ -36,7 +38,7 @@ Doing this seemed logical at first but it's best to keep fetching as high up the
 
 [Transmit](https://github.com/RickWong/react-transmit) looks nice and can talk to REST, but we didn't have time to dive into it.
 
-[Relay.js](http://facebook.github.io/react/blog/2015/08/11/relay-technical-preview.html) looks even nicer, but our back-end is just a REST endpoint. Porting it to [GraphQL](https://github.com/graphql/graphql-js) is way outside this projects budget. Also, it was anounced while our project was halfway done.
+[Relay.js](http://facebook.github.io/react/blog/2015/08/11/relay-technical-preview.html) looks even nicer, but our back-end is just a REST endpoint. Porting it to [GraphQL](https://github.com/graphql/graphql-js) is way outside this projects budget. Also, it was announced while our project was halfway done.
 
 Some tips
 ---------
@@ -65,7 +67,7 @@ This keeps the flow of data easy to follow, a much touted pro of doing component
 Componentize but don't exaggerate
 =================================
 
-Splitting the project into components greatly helps with reducing the mental bandwidth required for developing on the projects front-end. There is however a balance to be considered: cutting everything into a sub-sub-sub-component misses the point of separation of concerns.
+Component composition for me is the best thing about React, because it enforces a one-way data flow, aka 'prop-passing'. Splitting a project into a component tree greatly helps with reducing the mental bandwidth required for development. There is however a balance to be considered: cutting everything into a sub-sub-sub-component misses the point of separation of concerns.
 
 For example, our Chart component consists of three sub-components: LineChart, BoxplotChart and ScatterplotChart. They use [D3](http://d3js.org/) in the componentDidMount() and willReceiveProps() functions and that works great. Taking it to the extreme however, we could wrap everything in D3 as a React component, but who are we kidding then?
 
