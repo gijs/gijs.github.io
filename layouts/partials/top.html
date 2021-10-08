@@ -1,0 +1,28 @@
+<main class="container mx-auto px-4 pt-24 pb-12">
+    <h1 class="text-white text-5xl font-extrabold">Gijs Nijholt</h1>
+    <div
+      class="
+        max-w-screen-lg
+        text-lg
+        sm:text-2xl sm:leading-10
+        font-medium
+        text-white
+        my-2
+      "
+    >
+      Solo Developer &amp; UI Engineer
+    </div>
+  
+    <div class="flex flex-row items-center mt-10">
+      <div class="flex-shrink-0">
+        {{ $asset := resources.Get "/images/gijs.jpg" }}
+        {{ $img := $asset.Fit "200x200" }}
+        <figure class="image is-3by2">
+          <img alt="Gijs Nijholt" title="Gijs Nijholt" src="{{ $img.RelPermalink }}" />
+        </figure>      
+      </div>
+      <div class="prose text-white m-12 font-medium leading-normal md:text-xl lg:text-2xl">
+        {{.Content}}
+      </div>    
+    </div>
+</main>

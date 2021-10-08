@@ -1,0 +1,6 @@
+baseURL = 'http://gijs.github.io/'
+languageCode = 'en-us'
+title = 'Gijs Nijholt - Solo Developer & UI Engineer'
+[permalinks]
+  posts = '/:year/:month/:slug/'
+  '/' = '/:year/:month/:slug/'

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body class="bg-gradient-to-br from-purple-500 to-indigo-500">
+{{ block "main" . }}{{ end }}
+{{ partial "footer.html" . }}
+</body></html>

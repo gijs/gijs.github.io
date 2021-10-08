@@ -1,0 +1,64 @@
+{{ define "main" }}
+<style>
+  .prose a {
+      color: white;
+  }
+</style>
+
+<main class="container mx-auto px-4 pt-24 pb-12">
+  <h1 class="text-white text-5xl font-extrabold">Gijs Nijholt</h1>
+  <div
+    class="
+      max-w-screen-lg
+      text-lg
+      sm:text-2xl sm:leading-10
+      font-medium
+      text-white
+      my-2
+    "
+  >
+    Solo Developer &amp; UI Engineer
+  </div>
+
+  <div class="flex flex-col sm:flex-row items-center mt-10">
+    <div class="flex-shrink-0">
+      {{ $asset := resources.Get "/images/gijs.jpg" }}
+      {{ $img := $asset.Fit "200x200" }}
+      <figure class="image">
+        <img alt="Gijs Nijholt" title="Gijs Nijholt" src="{{ $img.RelPermalink }}" />
+      </figure>      
+    </div>
+    <div class="prose text-white m-4 sm:m-12 font-medium leading-normal md:text-xl lg:text-2xl">
+      {{.Content}}
+    </div>    
+  </div>
+</main>
+
+
+<div class="container mx-auto">
+  <!-- Ranges through content/posts/*.md -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+  {{ range .Pages }}
+  <a href="{{.Permalink}}">
+    <div class="flex flex-col bg-gray-100 my-4 py-4 px-2 rounded-lg shadow-2xl m-4 transform hover:-translate-y-1 hover:scale-105 transition duration-500 ease-in-out">
+      <div class="flex justify-between">
+        <div class="font-mono text-sm pb-2 ml-4 mt-4">
+          {{.Date.Format "2006/01/02"}}
+        </div>
+        <div class="font-mono text-sm pb-2 mr-4 mt-4">
+          {{.ReadingTime}} min read
+        </div>
+      </div>
+      <div class="text-4xl font-bold leading-tight mx-4">{{.Title}}</div>
+      <div class="py-4 mx-4 text-gray-500 leading-normal">
+        {{.Summary}}
+      </div>
+      <div class="w-full text-right pr-4">
+        <div class="text-lg sm:text-xl font-medium transition-colors duration-200 focus:ring-2 focus:ring-offset-2 focus:ring-current focus:outline-none rounded-md text-rose-600 hover:text-rose-800">Read more &rarr;</div>
+      </div>
+    </div>
+  </a>
+  {{ end }}
+  </div>
+</div>
+{{ end }}

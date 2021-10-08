@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  @apply object-cover object-center rounded-xl shadow-lg my-4;
+}
+

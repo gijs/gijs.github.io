@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<div class="bg-white min-h-screen">
+  <div class="container mx-auto">
+    <div class="flex flex-col items-center">
+      <h1 class="text-5xl my-5 font-extrabold text-center sm:w-full md:w-3/4 lg:w-1/2 mx-4 leading-tight">{{ .Title }}</h1>
+      <div class="font-mono text-sm pb-2 ml-4 mt text-center">
+        {{.Date.Format "2006/01/02"}} - {{.ReadingTime}} min read
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto mt-5 prose">
+    <div class="flex justify-center">
+      <div class="mx-4">
+        <p class="text-gray-700 text-base leading-snug">{{ .Content }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
