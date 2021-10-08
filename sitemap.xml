@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>http://gijs.github.io/2021/10/introducing-showcase-a-new-interactive-design-community/</loc><lastmod>2021-10-06T19:25:57+02:00</lastmod></url><url><loc>http://gijs.github.io/2021/10/conceptual-integrity/</loc><lastmod>2021-10-06T18:25:57+02:00</lastmod></url><url><loc>http://gijs.github.io/2021/10/fifth-post/</loc><lastmod>2021-10-06T17:25:57+02:00</lastmod></url><url><loc>http://gijs.github.io/2021/10/fourth-post/</loc><lastmod>2021-10-06T16:25:57+02:00</lastmod></url><url><loc>http://gijs.github.io/2021/10/third-post/</loc><lastmod>2021-10-06T15:25:57+02:00</lastmod></url><url><loc>http://gijs.github.io/2021/10/second-post/</loc><lastmod>2021-10-06T14:25:57+02:00</lastmod></url><url><loc>http://gijs.github.io/2021/10/first-post/</loc><lastmod>2021-10-06T13:22:57+02:00</lastmod></url><url><loc>http://gijs.github.io/</loc><priority>0</priority></url><url><loc>http://gijs.github.io/categories/</loc></url><url><loc>http://gijs.github.io/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://gijs.github.io/2021/10/introducing-showcase-a-new-interactive-design-community/</loc>
+    <lastmod>2021-10-06T19:25:57+02:00</lastmod>
+  </url><url>
+    <loc>http://gijs.github.io/2021/10/conceptual-integrity/</loc>
+    <lastmod>2021-10-06T18:25:57+02:00</lastmod>
+  </url><url>
+    <loc>http://gijs.github.io/2021/10/fifth-post/</loc>
+    <lastmod>2021-10-06T17:25:57+02:00</lastmod>
+  </url><url>
+    <loc>http://gijs.github.io/2021/10/fourth-post/</loc>
+    <lastmod>2021-10-06T16:25:57+02:00</lastmod>
+  </url><url>
+    <loc>http://gijs.github.io/2021/10/third-post/</loc>
+    <lastmod>2021-10-06T15:25:57+02:00</lastmod>
+  </url><url>
+    <loc>http://gijs.github.io/2021/10/second-post/</loc>
+    <lastmod>2021-10-06T14:25:57+02:00</lastmod>
+  </url><url>
+    <loc>http://gijs.github.io/2021/10/first-post/</loc>
+    <lastmod>2021-10-06T13:22:57+02:00</lastmod>
+  </url><url>
+    <loc>http://gijs.github.io/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>http://gijs.github.io/categories/</loc>
+  </url><url>
+    <loc>http://gijs.github.io/tags/</loc>
+  </url>
+</urlset>
