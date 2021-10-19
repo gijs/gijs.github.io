@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Currently - Gijs Nijholt</title>
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/main.min.8349b4a80f08c4ce747cb298848b30fe8326e492a334afb3d20e11f80b9cbd0f.css" integrity="sha256-g0m0qA8IxM50fLKYhIsw/oMm5JKjNK+z0g4R+AucvQ8="/>
+
+</head>
+<body class="bg-gradient-to-br from-purple-500 to-indigo-500">
+
+
+<div>
+  <div class="container mx-auto text-white py-4">
+    <a href="http://gijs.github.io/"
+      ><h1 class="text-white text-3xl font-extrabold mx-2">Gijs Nijholt</h1></a
+    >
+  </div>
+</div>
+
+<div class="bg-white min-h-screen">
+  <div class="container mx-auto">
+    <div class="flex flex-col items-center">
+      <h1
+        class="
+          text-5xl
+          my-5
+          font-extrabold
+          text-center
+          sm:w-full
+          md:w-3/4
+          lg:w-1/2
+          mx-4
+          leading-tight
+        "
+      >
+        Currently
+      </h1>
+      <div class="font-mono text-sm pb-2 ml-4 mt text-center">
+        2021/10/19 - 3 min read
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto mt-5 prose lg:prose-xl">
+    <div class="flex justify-center">
+      <div class="mx-4">
+        <p class="text-gray-700 text-base leading-snug"><p>Side projects that I&rsquo;m currently working on.</p>
+<h1 id="helemaalgroen">HelemaalGroen</h1>
+<p><a href="https://app.helemaalgroen.nl/">HelemaalGroen</a> is a web application founded by Jaap de Boer, a retired veterinarian, who came up with the concept after being forced to walk instead of cycle after a cycling accident.</p>
+<p>While walking, he noticed the large amounts of litter in the streets and decided to make a website to help people find and clean up litter.</p>
+<p>The concept is to allow people to use a smartphone while they clean up litter. The app tracks their location and logs the route, similar to how Strava works. When a cleaning route is completed, it appears on a map as green. This shows to other users that it has been cleaned recently. After 30 days it begins to turn orange and then brown, and then it disappears.</p>
+<blockquote>
+<p>The greener the map, the cleaner the streets.</p>
+</blockquote>
+<p>I&rsquo;ve built the application using Django and PostGIS on a DigitalOcean droplet. The MVP had a Strava integration, so the app part was handled by using Strava. Later on, a third party built dedicated iOS and Android apps for the project.</p>
+<p><img src="helemaalgroen.png" alt=""></p>
+<h1 id="zonnegrens">Zonnegrens</h1>
+<p><a href="https://zonnegrens.nl/">Zonnegrens</a> is a web application which shows the shadow cast by real estate on a map. It is a project I started in 2016 and it&rsquo;s generating quite a stable revenue flow. It&rsquo;s not recurring in the SaaS way, but the avg monthly revenue is around €500. Built with Django and PostGIS.</p>
+<p><img src="zonnegrens.png" alt=""></p>
+<h1 id="mijn-huis-in-beeld">Mijn huis in beeld</h1>
+<p>This project was born out of a need to show my house on a website. I wanted it to be a top-level domain name, but this is quite a hassle, so this project does everything automatically. Users can register their domain name (streetname + housenumber + city) and the website will register the domain for them. After registration, users can choose a theme, provide details about the house and upload images. Then the website will automatically create a website for the house to sell.</p>
+<p>See <a href="https://www.mijnhuisinbeeld.com/">https://www.mijnhuisinbeeld.com/</a> (in progress)</p>
+<p><img src="mijnhuisinbeeld.png" alt=""></p>
+<h1 id="small-projects">Small projects</h1>
+<h2 id="qr-finder">QR finder</h2>
+<p>QR Finder is a web application that allows you to create QR code stickers. When the code gets scanned, a URL opens with details about the object, the owner etc.</p>
+<h2 id="qrdoorbell">QRDoorbell</h2>
+<p>Similar to the QR Finder project, but when the QR code gets scanned, a pre-defined phone number gets called via Twilio, to replace the physical doorbell. Allows for a flexible doorbells setup.</p>
+<h2 id="whatsmail">WhatsMail</h2>
+<p>Why does email have to look so formal? Dear sir? Sincerely? Times have changed. WhatsMail is a web application that looks exactly like WhatsApp, UI-wise. But it uses good-old e-mail under the hood. People like to use whatsapp because it&rsquo;s quick and easy to use. This projects attempts to borrow the UI of whatsapp to bring a better UX to email.</p>
+<h2 id="cooktracker">CookTracker</h2>
+<p><a href="https://nyholt.gitlab.io/cooktracker/">CookTracker</a> is a web application that allows multiple timers to run in a recipe. Just follow the steps and the timers will start when you are ready.</p>
+<p><img src="5r0bbj.gif" alt=""></p>
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container mx-auto">
+  <div class="flex items-center justify-end text-gray-100 text-sm py-1 m-4">
+    Gijs Nijholt 2021
+  </div>
+</footer>
+
+</body>
+</html>

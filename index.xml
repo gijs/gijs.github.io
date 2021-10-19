@@ -7,6 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="http://gijs.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Currently</title>
+      <link>http://gijs.github.io/2021/10/currently/</link>
+      <pubDate>Tue, 19 Oct 2021 15:25:57 +0200</pubDate>
+      
+      <guid>http://gijs.github.io/2021/10/currently/</guid>
+      <description>Side projects that I&amp;rsquo;m currently working on.
+HelemaalGroen HelemaalGroen is a web application founded by Jaap de Boer, a retired veterinarian, who came up with the concept after being forced to walk instead of cycle after a cycling accident.
+While walking, he noticed the large amounts of litter in the streets and decided to make a website to help people find and clean up litter.
+The concept is to allow people to use a smartphone while they clean up litter.</description>
+    </item>
+    
+    <item>
       <title>Recently</title>
       <link>http://gijs.github.io/2021/10/recently/</link>
       <pubDate>Sat, 02 Oct 2021 15:25:57 +0200</pubDate>
