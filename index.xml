@@ -12,7 +12,11 @@
       <pubDate>Sat, 02 Oct 2021 15:25:57 +0200</pubDate>
       
       <guid>http://gijs.github.io/2021/10/recently/</guid>
-      <description>Recently&amp;hellip;</description>
+      <description>Interesting things I&amp;rsquo;ve stumbled upon recently.
+Web dev &amp;amp; User interface   https://htmx.org/ - I&amp;rsquo;ve seen a bit too many hours get wasted fixing webpack configurations, so I&amp;rsquo;m looking forward to using something like HTMX or Elixir LiveView to simplify some of my upcoming web UI work.
+  Smartcrop.js: Node &amp;amp; browser smart cropping library
+  Stitches: CSS-in-JS library with near-zero runtime, SSR, multi-variant support
+  Theatre.</description>
     </item>
     
     <item>
