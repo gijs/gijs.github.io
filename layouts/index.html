@@ -1,7 +1,7 @@
 {{ define "main" }}
 <style>
   .prose a {
-      color: white;
+    color: white;
   }
 </style>
 
@@ -22,43 +22,158 @@
 
   <div class="flex flex-col sm:flex-row items-center mt-10">
     <div class="flex-shrink-0">
-      {{ $asset := resources.Get "/images/gijs.jpg" }}
-      {{ $img := $asset.Fit "200x200" }}
+      {{ $asset := resources.Get "/images/gijs.jpg" }} {{ $img := $asset.Fit "200x200" }}
       <figure class="image">
-        <img alt="Gijs Nijholt" title="Gijs Nijholt" src="{{ $img.RelPermalink }}" />
-      </figure>      
+        <img
+          alt="Gijs Nijholt"
+          title="Gijs Nijholt"
+          src="{{ $img.RelPermalink }}"
+        />
+      </figure>
     </div>
-    <div class="prose text-white m-4 sm:m-12 font-medium leading-normal md:text-xl lg:text-2xl">
-      {{.Content}}
-    </div>    
+    <div class="m-4 sm:m-12">
+      <div
+        class="
+          prose
+          text-white
+          font-medium
+          leading-normal
+          md:text-xl
+          lg:text-2xl
+        "
+      >
+        {{.Content}}
+      </div>
+      <div class="flex flex-col text-white md:text-lg text-sm my-3 gap-2">
+        <div class="flex flex-row gap-4">
+          <div class="flex-shrink-0 w-10">
+            <div
+              class="
+                invisible
+                w-10
+                h-10
+                flex
+                justify-center
+                items-center
+                bg-indigo-300
+                rounded-full
+                animate-fade-in-down
+              "
+              style="animation-delay:0.55s;opacity:1;animation-fill-mode:forwards;visibility:invisible;"
+            >
+              <svg width="24px" height="24px" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.41a6.27,6.27,0,0,0-8.16,9.48l6,6.05a3,3,0,0,0,4.24,0l6-6.05A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6,6a1,1,0,0,1-1.42,0l-6-6a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,6Z"/></svg>
+            </div>
+          </div>
+          <div class="invisible flex items-center font-light animate-fade-in-down" style="animation-delay:0.25s;opacity:1;animation-fill-mode:forwards;visibility:invisible;">
+            Building interesting software using boring technology
+          </div>
+        </div>
+        <div class="flex flex-row gap-4">
+          <div class="flex-shrink-0 w-10">
+            <div
+              class="
+                invisible
+                w-10
+                h-10
+                flex
+                justify-center
+                items-center
+                bg-indigo-300
+                rounded-full
+                animate-fade-in-down
+              "
+              style="animation-delay:0.65s;opacity:1;animation-fill-mode:forwards;visibility:invisible;"
+            >
+              <svg width="24px" height="24px" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19,6.5H16v-1a3,3,0,0,0-3-3H11a3,3,0,0,0-3,3v1H5a3,3,0,0,0-3,3v9a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3v-9A3,3,0,0,0,19,6.5Zm-9-1a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v1H10Zm10,13a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V13.45H7V14.5a1,1,0,0,0,2,0V13.45h6V14.5a1,1,0,0,0,2,0V13.45h3Zm0-7H4V9.5a1,1,0,0,1,1-1H19a1,1,0,0,1,1,1Z"/></svg>
+            </div>
+          </div>
+          <div class="invisible flex items-center font-light animate-fade-in-down" style="animation-delay:0.50s;opacity:1;animation-fill-mode:forwards;visibility:invisible;">
+            UI Engineer at Nelen &amp; Schuurmans
+          </div>
+        </div>
+        <div class="flex flex-row gap-4">
+          <div class="flex-shrink-0 w-10">
+            <div
+              class="
+                invisible
+                w-10
+                h-10
+                flex
+                justify-center
+                items-center
+                bg-indigo-300
+                rounded-full
+                animate-fade-in-down
+              "
+              style="animation-delay:0.75s;opacity:1;animation-fill-mode:forwards;visibility:invisible;"
+            >
+              <svg width="24px" height="24px" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M21,10a.99974.99974,0,0,0,1-1V6a.9989.9989,0,0,0-.68359-.94824l-9-3a1.002,1.002,0,0,0-.63282,0l-9,3A.9989.9989,0,0,0,2,6V9a.99974.99974,0,0,0,1,1H4v7.18427A2.99507,2.99507,0,0,0,2,20v2a.99974.99974,0,0,0,1,1H21a.99974.99974,0,0,0,1-1V20a2.99507,2.99507,0,0,0-2-2.81573V10ZM20,21H4V20a1.001,1.001,0,0,1,1-1H19a1.001,1.001,0,0,1,1,1ZM6,17V10H8v7Zm4,0V10h4v7Zm6,0V10h2v7ZM4,8V6.7207l8-2.667,8,2.667V8Z"/></svg>
+            </div>
+          </div>
+          <div class="invisible flex items-center font-light animate-fade-in-down" style="animation-delay:0.75s;opacity:1;animation-fill-mode:forwards;visibility:invisible;">
+            Master of Arts in Interaction Design
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
-
 
 <div class="container mx-auto">
   <!-- Ranges through content/posts/*.md -->
   <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-  {{ range .Pages }}
-  <a href="{{.Permalink}}">
-    <div class="flex flex-col bg-gray-100 my-4 py-4 px-2 rounded-lg shadow-2xl m-4 transform hover:-translate-y-1 hover:scale-105 transition duration-500 ease-in-out">
-      <div class="flex justify-between">
-        <div class="font-mono text-sm pb-2 ml-4 mt-4">
-          {{.Date.Format "2006/01/02"}}
+    {{ range .Pages }}
+    <a href="{{.Permalink}}">
+      <div
+        class="
+          flex flex-col
+          bg-gray-100
+          my-4
+          py-4
+          px-2
+          rounded-lg
+          shadow-2xl
+          m-4
+          transform
+          hover:-translate-y-1 hover:scale-105
+          transition
+          duration-500
+          ease-in-out
+        "
+      >
+        <div class="flex justify-between">
+          <div class="font-mono text-sm pb-2 ml-4 mt-4">
+            {{.Date.Format "2006/01/02"}}
+          </div>
+          <div class="font-mono text-sm pb-2 mr-4 mt-4">
+            {{.ReadingTime}} min read
+          </div>
         </div>
-        <div class="font-mono text-sm pb-2 mr-4 mt-4">
-          {{.ReadingTime}} min read
+        <div class="text-4xl font-bold leading-tight mx-4">{{.Title}}</div>
+        <div class="py-4 mx-4 text-gray-500 leading-normal">{{.Summary}}</div>
+        <div class="w-full text-right pr-4">
+          <div
+            class="
+              text-lg
+              sm:text-xl
+              font-medium
+              transition-colors
+              duration-200
+              focus:ring-2
+              focus:ring-offset-2
+              focus:ring-current
+              focus:outline-none
+              rounded-md
+              text-rose-600
+              hover:text-rose-800
+            "
+          >
+            Read more &rarr;
+          </div>
         </div>
       </div>
-      <div class="text-4xl font-bold leading-tight mx-4">{{.Title}}</div>
-      <div class="py-4 mx-4 text-gray-500 leading-normal">
-        {{.Summary}}
-      </div>
-      <div class="w-full text-right pr-4">
-        <div class="text-lg sm:text-xl font-medium transition-colors duration-200 focus:ring-2 focus:ring-offset-2 focus:ring-current focus:outline-none rounded-md text-rose-600 hover:text-rose-800">Read more &rarr;</div>
-      </div>
-    </div>
-  </a>
-  {{ end }}
+    </a>
+    {{ end }}
   </div>
 </div>
 {{ end }}

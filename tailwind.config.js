@@ -1,8 +1,26 @@
 module.exports = {
   purge: ["layouts/**/*.html"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        "fade-in-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+            visibility: "hidden"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+            visibility: "visible"
+          },
+        },
+      },
+      animation: {
+        "fade-in-down": "fade-in-down 0.35s ease-in",
+      },
+    },
   },
   variants: {
     extend: {},
