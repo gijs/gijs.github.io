@@ -39,5 +39,21 @@
       </div>
     </div>
   </div>
+  
+  <div class="container mx-auto flex justify-between prose lg:prose-xl my-4">
+    <div class="">
+      {{ if .NextPage }}
+      <a class="" href="{{ .NextPage.Permalink }}">« {{ .NextPage.Title | truncate 50 "..." }}</a>
+      {{ end }}
+    </div>
+    
+    <div class="">
+      {{ if .PrevPage }}
+      <a class="" href="{{ .PrevPage.Permalink }}">{{ .PrevPage.Title | truncate 50 "..."}} »</a>
+      {{ end }}
+    </div>
+  </div>
 </div>
+
+
 {{ end }}
