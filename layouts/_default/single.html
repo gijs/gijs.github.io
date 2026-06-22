@@ -1,35 +1,41 @@
 {{ define "main" }}
 
-{{/* Sub-nav bar — constrained width, not full bleed */}}
-<div class="border-b border-gray-200" style="font-family: 'Inter', sans-serif;">
-  <div class="max-w-5xl mx-auto px-6 py-2 flex items-center justify-between text-xs text-gray-400">
+{{/* Sub-nav — full width */}}
+<div class="w-full border-b border-gray-200" style="font-family: 'Inter', sans-serif;">
+  <div class="px-6 py-2 flex items-center justify-between text-xs text-gray-400">
     <a href="{{ .Site.Home.Permalink }}" class="hover:text-gray-800 transition-colors">{{ .Title }}</a>
     <span>{{ .Date.Format "2 January 2006" }}</span>
   </div>
 </div>
 
-<article class="max-w-5xl mx-auto px-6 py-12">
+{{/* Hero image — short banner from page bundle */}}
+{{ with .Resources.GetMatch "*.{jpg,jpeg,png,webp}" }}
+<div class="w-full overflow-hidden" style="height: 175px;">
+  <img src="{{ .RelPermalink }}" alt="" style="width:100%;height:175px;object-fit:cover;display:block;border-radius:0;margin:0;" />
+</div>
+{{ end }}
 
-  {{/* Article meta — no date on the right */}}
-  <div class="mb-4 pb-3 border-b border-gray-200">
-    <p class="text-sm text-gray-400" style="font-family: 'Inter', sans-serif;">
-      <span class="border-b border-gray-300">Words by</span> <strong class="text-gray-800">Gijs Nijholt</strong>
+<article class="max-w-5xl mx-auto px-6 pt-8 pb-16">
+
+  {{/* Meta row */}}
+  <div class="flex items-baseline justify-between mb-3">
+    <p class="article-meta-label">
+      <span class="words-by-label">Words by</span>&thinsp;<strong>Gijs Nijholt</strong>
     </p>
+    <time class="article-meta-date">{{ .Date.Format "2 January 2006" }}</time>
   </div>
 
   {{/* Title */}}
-  <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; color: #111; margin-bottom: 1.5rem;">
-    {{ .Title }}
-  </h1>
+  <h1 class="article-title">{{ .Title }}</h1>
 
   <hr class="border-gray-200 mb-3" />
 
-  <div class="flex justify-end mb-10">
-    <span class="text-xs text-gray-400" style="font-family: 'Inter', sans-serif;">{{ .ReadingTime }} Mins</span>
+  <div class="flex justify-end mb-8">
+    <span style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #aaa; letter-spacing: 0.03em;">{{ .ReadingTime }} Mins</span>
   </div>
 
-  {{/* Body */}}
-  <div class="prose max-w-2xl">
+  {{/* Body — CSS handles lead + short HR + body indent */}}
+  <div class="prose article-body">
     {{ .Content }}
   </div>
 
@@ -38,16 +44,16 @@
     <div>
       {{ if .NextPage }}
       <a href="{{ .NextPage.Permalink }}" class="group flex flex-col">
-        <span class="text-xs text-gray-400 mb-1" style="font-family: 'Inter', sans-serif;">&larr; Previous</span>
-        <span class="text-gray-900 group-hover:opacity-60 transition-opacity" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1rem;">{{ .NextPage.Title | truncate 60 "..." }}</span>
+        <span style="font-family:'Inter',sans-serif;font-size:0.7rem;color:#aaa;margin-bottom:0.25rem;">&larr; Previous</span>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-weight:700;color:#111;font-size:1rem;" class="group-hover:opacity-60 transition-opacity">{{ .NextPage.Title | truncate 60 "..." }}</span>
       </a>
       {{ end }}
     </div>
     <div class="text-right">
       {{ if .PrevPage }}
       <a href="{{ .PrevPage.Permalink }}" class="group flex flex-col items-end">
-        <span class="text-xs text-gray-400 mb-1" style="font-family: 'Inter', sans-serif;">Next &rarr;</span>
-        <span class="text-gray-900 group-hover:opacity-60 transition-opacity" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1rem;">{{ .PrevPage.Title | truncate 60 "..." }}</span>
+        <span style="font-family:'Inter',sans-serif;font-size:0.7rem;color:#aaa;margin-bottom:0.25rem;">Next &rarr;</span>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-weight:700;color:#111;font-size:1rem;" class="group-hover:opacity-60 transition-opacity">{{ .PrevPage.Title | truncate 60 "..." }}</span>
       </a>
       {{ end }}
     </div>
