@@ -1,5 +1,31 @@
-<footer class="container mx-auto">
-  <div class="flex items-center justify-end text-gray-100 text-sm py-1 m-4">
-    Gijs Nijholt 2021
+<footer class="mt-20" style="font-family: 'Inter', sans-serif;">
+  <hr class="border-gray-200" />
+
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-6">
+    <div class="flex items-start justify-between mb-8">
+      <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 2.5rem; font-weight: 700; color: #111;">Contact</h2>
+      <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;"
+        class="text-sm text-gray-400 hover:text-gray-800 transition-colors mt-2">
+        Back to top &uarr;
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8 text-sm">
+      <div>
+        <p class="text-gray-400 mb-1 text-xs uppercase tracking-wide">Email</p>
+        <a href="mailto:gijs@nijholt.nl" class="text-gray-900 font-medium hover:opacity-50 transition-opacity">gijs@nijholt.nl</a>
+      </div>
+      <div>
+        <p class="text-gray-400 mb-1 text-xs uppercase tracking-wide">GitHub</p>
+        <a href="https://github.com/nyholt" class="text-gray-900 font-medium hover:opacity-50 transition-opacity">github.com/nyholt</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-gray-200" />
+
+  <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between text-xs text-gray-400">
+    <span>Gijs Nijholt &copy; {{ now.Format "2006" }}</span>
+    <span>Solo Developer &amp; UI Engineer</span>
   </div>
 </footer>

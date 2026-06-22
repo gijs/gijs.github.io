@@ -1,59 +1,57 @@
 {{ define "main" }}
 
-<div>
-  <div class="container mx-auto text-white py-4">
-    <a href="{{ .Site.Home.Permalink }}"
-      ><h1 class="text-white text-3xl font-extrabold mx-2">Gijs Nijholt</h1></a
-    >
+{{/* Sub-nav bar — constrained width, not full bleed */}}
+<div class="border-b border-gray-200" style="font-family: 'Inter', sans-serif;">
+  <div class="max-w-5xl mx-auto px-6 py-2 flex items-center justify-between text-xs text-gray-400">
+    <a href="{{ .Site.Home.Permalink }}" class="hover:text-gray-800 transition-colors">{{ .Title }}</a>
+    <span>{{ .Date.Format "2 January 2006" }}</span>
   </div>
 </div>
 
-<div class="bg-white min-h-screen">
-  <div class="container mx-auto">
-    <div class="flex flex-col items-center">
-      <h1
-        class="
-          text-5xl
-          my-5
-          font-extrabold
-          text-center
-          sm:w-full
-          md:w-3/4
-          lg:w-1/2
-          mx-4
-          leading-tight
-        "
-      >
-        {{ .Title }}
-      </h1>
-      <div class="font-mono text-sm pb-2 ml-4 mt text-center">
-        {{.Date.Format "2006/01/02"}} - {{.ReadingTime}} min read
-      </div>
-    </div>
+<article class="max-w-5xl mx-auto px-6 py-12">
+
+  {{/* Article meta — no date on the right */}}
+  <div class="mb-4 pb-3 border-b border-gray-200">
+    <p class="text-sm text-gray-400" style="font-family: 'Inter', sans-serif;">
+      <span class="border-b border-gray-300">Words by</span> <strong class="text-gray-800">Gijs Nijholt</strong>
+    </p>
   </div>
 
-  <div class="container mx-auto mt-5 prose lg:prose-xl">
-    <div class="flex justify-center">
-      <div class="mx-4">
-        <p class="text-gray-700 text-base leading-snug">{{ .Content }}</p>
-      </div>
-    </div>
+  {{/* Title */}}
+  <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; color: #111; margin-bottom: 1.5rem;">
+    {{ .Title }}
+  </h1>
+
+  <hr class="border-gray-200 mb-3" />
+
+  <div class="flex justify-end mb-10">
+    <span class="text-xs text-gray-400" style="font-family: 'Inter', sans-serif;">{{ .ReadingTime }} Mins</span>
   </div>
-  
-  <div class="container mx-auto flex justify-between prose lg:prose-xl my-4">
-    <div class="">
+
+  {{/* Body */}}
+  <div class="prose max-w-2xl">
+    {{ .Content }}
+  </div>
+
+  {{/* Prev / Next */}}
+  <nav class="mt-16 pt-8 border-t border-gray-200 grid grid-cols-2 gap-8">
+    <div>
       {{ if .NextPage }}
-      <a class="" href="{{ .NextPage.Permalink }}">« {{ .NextPage.Title | truncate 50 "..." }}</a>
+      <a href="{{ .NextPage.Permalink }}" class="group flex flex-col">
+        <span class="text-xs text-gray-400 mb-1" style="font-family: 'Inter', sans-serif;">&larr; Previous</span>
+        <span class="text-gray-900 group-hover:opacity-60 transition-opacity" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1rem;">{{ .NextPage.Title | truncate 60 "..." }}</span>
+      </a>
       {{ end }}
     </div>
-    
-    <div class="">
+    <div class="text-right">
       {{ if .PrevPage }}
-      <a class="" href="{{ .PrevPage.Permalink }}">{{ .PrevPage.Title | truncate 50 "..."}} »</a>
+      <a href="{{ .PrevPage.Permalink }}" class="group flex flex-col items-end">
+        <span class="text-xs text-gray-400 mb-1" style="font-family: 'Inter', sans-serif;">Next &rarr;</span>
+        <span class="text-gray-900 group-hover:opacity-60 transition-opacity" style="font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: 1rem;">{{ .PrevPage.Title | truncate 60 "..." }}</span>
+      </a>
       {{ end }}
     </div>
-  </div>
-</div>
+  </nav>
 
-
+</article>
 {{ end }}

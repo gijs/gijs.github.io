@@ -2,7 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-img {
-  @apply object-cover object-center rounded-xl shadow-lg my-4;
+/* ── Global ── */
+body {
+  background-color: #FFF5F2;
+  color: #111;
 }
 
+/* ── Prose (article body) ── */
+.prose {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: #222;
+}
+
+.prose p {
+  margin-bottom: 1.4em;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  color: #111;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.prose h2 { font-size: 1.6rem; }
+.prose h3 { font-size: 1.25rem; }
+
+.prose a {
+  color: #111;
+  text-decoration: underline;
+  text-decoration-color: #bbb;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s;
+}
+
+.prose a:hover {
+  text-decoration-color: #111;
+}
+
+.prose blockquote {
+  border-left: 3px solid #ddd;
+  padding-left: 1.25rem;
+  margin-left: 0;
+  font-style: italic;
+  color: #555;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  margin: 2rem 0;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4em;
+}
+
+.prose li {
+  margin-bottom: 0.4em;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 2.5rem 0;
+}
+
+.prose code {
+  font-size: 0.875em;
+  background: #f0ebe8;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+.prose pre {
+  background: #f0ebe8;
+  padding: 1.25rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+}

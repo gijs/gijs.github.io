@@ -1,0 +1,15 @@
+<header class="sticky top-0 z-50 border-b border-gray-200" style="background-color: #FFF5F2; font-family: 'Inter', sans-serif;">
+  <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 group">
+      {{ $asset := resources.Get "images/gijs-sm.jpg" }}
+      {{ if $asset }}
+      {{ $img := $asset.Fill "80x80" }}
+      <img src="{{ $img.RelPermalink }}" alt="Gijs Nijholt" style="width:2.5rem;height:2.5rem;border-radius:9999px;object-fit:cover;" />
+      {{ end }}
+      <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.9rem; line-height: 1.25; font-weight: 700; color: #111;">Gijs<br>Nijholt</span>
+    </a>
+    <nav class="flex items-center gap-6 text-sm text-gray-500">
+      <a href="/" class="hover:text-gray-900 transition-colors">Writing</a>
+    </nav>
+  </div>
+</header>

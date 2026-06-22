@@ -3,7 +3,8 @@
 <head>
     {{ partial "head.html" . }}
 </head>
-<body class="bg-gradient-to-br from-purple-500 to-indigo-500">
+<body>
+{{ partial "header.html" . }}
 {{ block "main" . }}{{ end }}
 {{ partial "footer.html" . }}
 </body>
