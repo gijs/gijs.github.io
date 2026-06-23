@@ -8,10 +8,10 @@
   </div>
 </div>
 
-{{/* Hero image — short banner from page bundle */}}
+{{/* Hero image — tall banner from page bundle */}}
 {{ with .Resources.GetMatch "*.{jpg,jpeg,png,webp}" }}
-<div class="w-full overflow-hidden" style="height: 175px;">
-  <img src="{{ .RelPermalink }}" alt="" style="width:100%;height:175px;object-fit:cover;display:block;border-radius:0;margin:0;" />
+<div class="w-full overflow-hidden" style="height: 340px;">
+  <img src="{{ .RelPermalink }}" alt="" style="width:100%;height:340px;object-fit:cover;display:block;border-radius:0;margin:0;" />
 </div>
 {{ end }}
 
@@ -22,7 +22,7 @@
     <p class="article-meta-label">
       <span class="words-by-label">Words by</span>&thinsp;<strong>Gijs Nijholt</strong>
     </p>
-    <time class="article-meta-date">{{ .Date.Format "2 January 2006" }}</time>
+    {{/*  <time class="article-meta-date">{{ .Date.Format "2 January 2006" }}</time>  */}}
   </div>
 
   {{/* Title */}}
