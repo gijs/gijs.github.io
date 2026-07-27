@@ -8,6 +8,8 @@ We ran a spike to find out whether we could build a usable schematisation editor
 
 A schematisation in 3Di is the model of a water network: channels, weirs, culverts, pumps, their geometry, and all the hydraulic parameters attached to each object. Today, editing a schematisation means opening QGIS, loading the 3Di plugin, making changes to the underlying GeoPackage, and uploading the result. That workflow works fine for modellers who live in QGIS. It's a significant barrier for water authority staff who want to make small corrections — updating a pump's capacity, adjusting a weir crest level — without spinning up a desktop GIS session.
 
+Demo: [https://earnest-bubblegum-9d34c6.netlify.app](https://earnest-bubblegum-9d34c6.netlify.app)
+
 ## What we looked at
 
 The spike was primarily inspired by [Placemark](https://placemark.io), an open-source web-based geospatial editor. Placemark's approach to editing geographic features in the browser is well-thought-out: it handles coordinate precision, projection management, and complex geometry edits in ways that most web map editors get wrong.
