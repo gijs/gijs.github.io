@@ -4,7 +4,7 @@ date: 2026-08-19T10:00:00+02:00
 draft: false
 ---
 
-> This HTMX rewrite is part of Rana's internal engineering/UX exploration. If you are facing similar architecture questions, we are happy to talk about what we found.
+This HTMX rewrite is part of Rana's internal engineering/UX exploration. If you are facing similar architecture questions, we are happy to talk about what we found.
 
 
 I had a feeling we were overengineering our frontend. Not dramatically — the code worked, the product shipped — but there was a persistent sense that things were more complex than they needed to be. Our React SPA had grown steadily: more state management, a larger bundle, custom link handling that broke browser expectations, and an increasing gap between what the product needed and what the framework demanded. So we ran an experiment: rewrite the entire frontend in Django and HTMX, and see how far it could go before it broke down.

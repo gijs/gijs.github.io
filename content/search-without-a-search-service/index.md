@@ -4,13 +4,12 @@ date: 2026-08-19T10:10:00+02:00
 draft: false
 ---
 
-![Search in Rana using the API and SQLite](search.png)
-
 One of the first things I wanted to do while working on the HTMX rewrite was search. Not Google-scale search but practical and fast search across a Rana organisation's data: find a file buried three directories deep in a project, locate a publication by keyword, pull up a processing job by name. The kind of search that feels basic but turns out to need some thought.
 
 The obvious answer is Elasticsearch, or Typesense, or Meilisearch. Stand up another service, sync data into it, query it. For this PoC, I did not want another service. 
 
 So I used SQLite.
+
 
 
 ## The Architecture in One Sentence
@@ -103,3 +102,6 @@ SQLite FTS5 is a serious full-text search engine. It handles Porter stemming, Un
 For a tool like Rana, where tenant data volumes are measured in thousands of files rather than millions, the crawl-and-query pattern is a good fit. The index is always slightly behind the live API — by minutes or hours depending on crawl frequency — which is an acceptable tradeoff for the simplicity it buys.
 
 If Rana ever needs sub-second freshness or faceted filtering across hundreds of millions of records, the interface to the search module is small enough that swapping the backend for something heavier would be straightforward. Until then, a file on disk is enough.
+
+
+![Search in Rana using the API and SQLite](search.png)
