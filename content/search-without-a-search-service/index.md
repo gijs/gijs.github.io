@@ -21,7 +21,7 @@ That's it.
 ## The Crawl
 The Django management command (`crawl_search_index`) is the workhorse. It is run with a tenant ID and a bearer token:
 
-```
+```bash
 python manage.py crawl_search_index --tenant nenstest
 ```
 
@@ -33,7 +33,7 @@ Alongside files, it crawls publications, processing jobs, and publication commen
 
 The result for a medium-sized tenant crawl looks something like:
 
-```
+```text
 === Tenant: nenstest ===
   12 project(s)
   → processes … 47 processes, 1.2s
@@ -49,7 +49,7 @@ Each tenant gets a single SQLite file at `var/search_index/{tenant_id}.db`.
 
 The schema is minimal by design:
 
-```
+```sql
 CREATE VIRTUAL TABLE search_index USING fts5(
     entity_type UNINDEXED,
     entity_id   UNINDEXED,
@@ -77,7 +77,7 @@ This keeps the index accurate across incremental runs without the cost or comple
 ## Querying
 The search function is four lines of SQL:
 
-```
+```sql
 SELECT
     entity_type, entity_id, project_id, branch, title,
     snippet(search_index, 5, '<mark>', '</mark>', '…', 10) AS excerpt,
