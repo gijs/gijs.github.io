@@ -67,7 +67,7 @@ With the wheels in place, the dependency loader itself needed four changes to wo
 
 **Python interpreter discovery.** On Linux and Windows, `sys.executable` points to the Python binary. On macOS, it points to the QGIS app bundle, `QGIS.app/Contents/MacOS/QGIS`, which is not a Python interpreter. The dependency loader runs pip in a subprocess, so it needs to find the actual `python3` binary. The updated `_get_python_interpreter()` tries a sequence of candidates relative to `sys.exec_prefix`:
 
-```
+```bash
 <dir>/bin/python3          # older QGIS layout
 <sys.exec_prefix>/bin/python3  # standard venv layout
 <dir>/python3.12           # QGIS 4 layout
