@@ -1,1 +1,1 @@
-👋🏻 Good day! I'm Gijs, a 40-something year old software developer from the Netherlands. I love to build enjoyable software, and I'm always looking for new challenges.
+👋🏻 Hello! I'm Gijs. I build interfaces for software that does genuinely complicated things. Think hydrodynamic simulations, geospatial pipelines, collaborative maps, etc. My expertise is bridging the gap between what a system can do and what a human can actually see. Without oversimplifying.
