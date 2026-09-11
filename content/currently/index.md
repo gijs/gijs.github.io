@@ -1,7 +1,7 @@
 ---
 title: "Currently"
 date: 2021-10-19T15:25:57+02:00
-draft: false
+draft: true
 ---
 
 Side projects that I'm currently working on.
