@@ -1,7 +1,7 @@
 ---
 title: "Querying 42,815 simulations with a single command"
 date: 2026-03-15T14:00:00+02:00
-draft: false
+draft: true
 ---
 
 We built a Claude skill for the HCC API, and the first time I used it in a real conversation I got back a list of 42,815 simulations. That number is both impressive and slightly alarming — the platform has accumulated a lot of compute history.

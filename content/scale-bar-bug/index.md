@@ -1,7 +1,7 @@
 ---
 title: "Tracking down an invisible scale bar"
 date: 2026-03-10T11:00:00+02:00
-draft: false
+draft: true
 ---
 
 One of our users filed a bug report with a screenshot attached: the map scale bar had disappeared. The screenshot showed a perfectly normal-looking Rana map viewer, publications panel on the left, layer controls on the right — and no scale bar where there should have been one. The bug was filed as a screenshot but the most useful thing turned out to be a screen recording.

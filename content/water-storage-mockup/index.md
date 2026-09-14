@@ -1,7 +1,7 @@
 ---
 title: "Designing an automatic water storage tool"
 date: 2026-03-05T15:00:00+02:00
-draft: false
+draft: true
 ---
 
 After the morning empathy mapping session we had energy left, so we stayed in the room and did a quick design sprint on one of the ideas that had surfaced repeatedly: automatic water storage management. By the end of the afternoon we had three screens and a rough interaction model.
