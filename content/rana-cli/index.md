@@ -1,5 +1,5 @@
 ---
-title: "A commandline interface for Rana"
+title: "A Commandline Interface for Rana"
 date: 2026-10-01T10:00:00+02:00
 draft: false
 ---
