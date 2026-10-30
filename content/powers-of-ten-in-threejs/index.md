@@ -4,11 +4,9 @@ date: 2026-10-30T10:00:00+02:00
 draft: false
 ---
 
-Do you remember the Eames [Powers of Ten film](https://www.youtube.com/watch?v=0fKBhvDjuy0)? It is a classic short film that explores the relative scale of the universe in factors of ten. I've always loved the way it visualizes the vastness of space and the minuteness of the microscopic world. In this post.
+Do you remember the Eames [Powers of Ten film](https://www.youtube.com/watch?v=0fKBhvDjuy0)? It is a classic short film that explores the relative scale of the universe in factors of ten. I've always loved the way it visualizes the vastness of space and the minuteness of the microscopic world.
 
 The original film was made in 1977 by Charles and Ray Eames, and it has inspired many to think about scale in a new way. Using Three.js, a popular JavaScript library for 3D graphics, I decided to use LLMs to recreate the Powers of Ten experience in a web browser. This allows users to interactively explore the universe from the largest scales down to the smallest.
-
-Take a look at the demo here: [Powers of Ten in Three.js](https://gijs.github.io/powers-of-ten/)
 
 The 1977 film crosses forty-one orders of magnitude in nine minutes, from a picnic
 blanket out to the superclusters and back down into a carbon nucleus. That span is
@@ -28,6 +26,8 @@ One thing took me three attempts to get right: **the square defines the scale, n
 the camera.** My first version drew the square at 46% of a frame it claimed was the
 full field of view. The two disagreed by a factor of 2.15, which made the HUD a
 decoration rather than an instrument.
+
+Take a look at the demo here: [Powers of Ten in Three.js](https://gijs.github.io/powers-of-ten/)
 
 ## Every catalogue draws you its own edge
 
